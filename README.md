@@ -1,2 +1,2 @@
-# Sharryhong's Font-End blog
+# Initial page
 
