@@ -1,8 +1,12 @@
+---
+description: '2021-05-12'
+---
+
 # styled-component theme.ts가 storybook엔 적용안되는 이슈
 
-2021-05-12
+### 해결방
 
-#### 설치 : [https://www.npmjs.com/package/storybook-addon-styled-component-theme](https://www.npmjs.com/package/storybook-addon-styled-component-theme) 
+#### npm install : [https://www.npmjs.com/package/storybook-addon-styled-component-theme](https://www.npmjs.com/package/storybook-addon-styled-component-theme) 
 
 > .storybook/preview.js
 

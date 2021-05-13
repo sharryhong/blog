@@ -1,5 +1,5 @@
 ---
-description: 'React, Typescript, Styled-components 개발환경에서 storybook 사용'
+description: 'React, Next, Typescript, Styled-components 개발환경에서 storybook 사용'
 ---
 
 # Storybook
