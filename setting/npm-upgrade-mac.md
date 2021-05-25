@@ -25,5 +25,5 @@ $ sudo npm install -g npm
 
 #### 참고링크 
 
-* npm vs yarn [https://dongmin-jang.medium.com/npm-vs-yarn-7b699c5d6034](https://dongmin-jang.medium.com/npm-vs-yarn-7b699c5d6034) 
+* 궁금하여 찾아본 &gt; npm vs yarn [https://dongmin-jang.medium.com/npm-vs-yarn-7b699c5d6034](https://dongmin-jang.medium.com/npm-vs-yarn-7b699c5d6034) 
 
