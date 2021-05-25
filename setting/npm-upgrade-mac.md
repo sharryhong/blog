@@ -25,5 +25,8 @@ $ sudo npm install -g npm
 
 #### 참고링크 
 
-* 궁금하여 찾아본 &gt; npm vs yarn [https://dongmin-jang.medium.com/npm-vs-yarn-7b699c5d6034](https://dongmin-jang.medium.com/npm-vs-yarn-7b699c5d6034) 
+* 궁금하여 찾아본 &gt; npm vs yarn [https://dongmin-jang.medium.com/npm-vs-yarn-7b699c5d6034](https://dongmin-jang.medium.com/npm-vs-yarn-7b699c5d6034)  =&gt; 보안 이슈는 npm 6버전부터 보완이 되었다고한다. 
+* 패키지매니저별 성능지표 [https://pnpm.io/benchmarks](https://pnpm.io/benchmarks) 
+
+
 
