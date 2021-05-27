@@ -1,0 +1,19 @@
+{
+  "name": "SharryHong's Dev Blog",
+  "version": "1.0.0",
+  "description": "프론트엔드 개발을 하며 이슈해결, 스터디 자료 모음 블로그",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharryhong/blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharryhong/blog/issues"
+  },
+  "homepage": "https://github.com/sharryhong/blog#readme"
+}
