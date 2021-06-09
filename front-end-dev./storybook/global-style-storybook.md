@@ -6,7 +6,7 @@ description: '2021-06-09'
 
 storybook에서 global style이 적용되지 않아서, 실제 스타일과 다른 이슈 발생!
 
-#### 해결방법 
+### 해결방법 
 
 > .storybook/preview.js
 
