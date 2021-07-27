@@ -4,6 +4,9 @@
 
 ## Front-End Dev.
 
+* [Vue.js](front-end-dev./vue.js/README.md)
+  * [Vue.js 개발자를 위한 VS Code](front-end-dev./vue.js/vue.js-vs-code.md)
+  * [Vue3 Chrome Extension](front-end-dev./vue.js/vue3-chrome-extension.md)
 * [API Mocking](front-end-dev./api-mocking.md)
 * [Storybook](front-end-dev./storybook/README.md)
   * [styled-component theme.ts가 storybook엔 적용안되는 이슈](front-end-dev./storybook/styled-component-theme.js-storybook.md)
