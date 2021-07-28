@@ -8,7 +8,7 @@ description: '2021-07-27'
 
 vs code 의 package 에 필수로 Vetur 설치 
 
-스니펫 \`&lt;vue\` 하고 tab키 누르면 자동생성 
+* 스니펫 \`vue\`  tab키 누르면 자동생성 
 
 ```text
 <template>
@@ -25,6 +25,10 @@ export default {
 
 </style>
 ```
+
+* 타입스크립트의 경우 스니펫  \`ts\`  tab키 누른  알맞는 버전 선택 후 자동생성  
+
+
 
 그 외에도 eslint, prettier 등 설치 팁이 있으니 꼭 읽어보자. 
 
