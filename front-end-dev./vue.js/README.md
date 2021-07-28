@@ -4,9 +4,9 @@ description: '2021-07-27'
 
 # Vue.js
 
-추천 강 : [https://www.vuemastery.com/](https://www.vuemastery.com/) 1년 구독
+추천 강의 : [https://www.vuemastery.com/](https://www.vuemastery.com/) 1년 구독 
 
-1년 구독 중에 일시중지, 재시 필요시 : [team@vuemastery.com](mailto:team@vuemastery.com) 에 이메일로 문의 
+1년 구독 중에 일시중지, 재시작 필요시 : [team@vuemastery.com](mailto:team@vuemastery.com) 에 이메일로 문의  
 
 
 
