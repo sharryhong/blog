@@ -6,9 +6,18 @@ description: '2021-07-27'
 
 참고링크 : [https://www.vuemastery.com/blog/vs-code-for-vuejs-developers/](https://www.vuemastery.com/blog/vs-code-for-vuejs-developers/) 
 
-vs code 의 package 에 필수로 Vetur 설치 
+참고링크 : [https://www.inflearn.com/course/vue-ts](https://www.inflearn.com/course/vue-ts) 강의 내용 중 
 
-* 스니펫 \`vue\`  tab키 누르면 자동생성 
+### 필요 설치 
+
+* VS Code 최신으로 다운로드 : [https://code.visualstudio.com/](https://code.visualstudio.com/) 
+* Vetur, Vue VScode Snippet 플러그인 설치 
+
+
+
+### 편리한 기능들 
+
+* 스니펫 \`vue\`  tab키 누르면 아래와 같이 코드 자동생성 
 
 ```text
 <template>
@@ -26,11 +35,21 @@ export default {
 </style>
 ```
 
-* 타입스크립트의 경우 스니펫  \`ts\`  tab키 누른  알맞는 버전 선택 후 자동생성  
+* 타입스크립트의 경우 스니펫  \`ts\` 후  알맞는 버전을 선택하면, 타입스크립트를 작성할 수 있는 기본 싱글파일컴포넌트 구조가 작성된다.    
 
 
 
-그 외에도 eslint, prettier 등 설치 팁이 있으니 꼭 읽어보자. 
+* 스니펫 \`vdata\` 작성시 아래 코드 자동 생성
 
-특히 저장시 린트 자동 수정 기능 매우 유용~!  
+```text
+data() {
+    return {
+      key: value
+    }
+  },
+```
+
+* 컴포넌트 파일이동 : mac에서는 option키 누르고 컴포넌트 클릭시 이동 
+
+
 
