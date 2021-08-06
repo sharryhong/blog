@@ -22,6 +22,7 @@ description: '2021-05-26'
 * [https://www.npmjs.com/package/msw](https://www.npmjs.com/package/msw)
 * react : [https://github.com/mswjs/examples/tree/master/examples/rest-react](https://github.com/mswjs/examples/tree/master/examples/rest-react)
 * next : [https://github.com/vercel/next.js/tree/canary/examples/with-msw](https://github.com/vercel/next.js/tree/canary/examples/with-msw)
+* vue : [https://www.vuemastery.com/blog/mock-service-worker-api-mocking-for-vuejs-development-testing/](https://www.vuemastery.com/blog/mock-service-worker-api-mocking-for-vuejs-development-testing/) 
 
 
 
