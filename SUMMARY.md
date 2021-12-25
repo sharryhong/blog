@@ -24,4 +24,5 @@
 
 ## DEV BETTER
 
-* [Clean Code](dev-better/clean-code.md)
+* [Clean Code](dev-better/clean-code/README.md)
+  * [클린 코드를 위한 5가지 팁](dev-better/clean-code/5.md)
