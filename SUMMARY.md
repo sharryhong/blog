@@ -29,6 +29,7 @@
     * [변수 다루기](dev-better/clean-code/undefined/undefined.md)
     * [경계 다루기](dev-better/clean-code/undefined/undefined-1.md)
     * [분기 다루기](dev-better/clean-code/undefined/undefined-2.md)
+    * [배열 다루기](dev-better/clean-code/undefined/undefined-3.md)
   * [클린 코드를 위한 5가지 팁](dev-better/clean-code/5.md)
   * [코딩 잘하는 팁 3가지](dev-better/clean-code/3.md)
 * [웹 성능 최적화](dev-better/undefined.md)
