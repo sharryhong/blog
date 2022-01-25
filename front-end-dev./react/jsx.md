@@ -48,3 +48,5 @@ jsconfig.json 에 "jsx": "react",  추가&#x20;
   "includes": ["src"]
 }
 ```
+
+참고링크: [https://github.com/microsoft/vscode/issues/30290](https://github.com/microsoft/vscode/issues/30290) &#x20;
