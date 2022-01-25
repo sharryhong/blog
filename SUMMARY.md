@@ -4,7 +4,8 @@
 
 ## Front-End Dev.
 
-* [React](front-end-dev./react.md)
+* [React](front-end-dev./react/README.md)
+  * [절대경로 설정, jsx파일로 이동 설정](front-end-dev./react/jsx.md)
 * [Vue.js](front-end-dev./vue.js/README.md)
   * [Vue.js 개발자를 위한 VS Code](front-end-dev./vue.js/vue.js-vs-code.md)
   * [Vue3 Chrome Extension](front-end-dev./vue.js/vue3-chrome-extension.md)
