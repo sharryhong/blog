@@ -55,5 +55,35 @@ function formatDate(targetData) {
 }
 ```
 
+### 유사 배열 객체
 
+예 : 함수 내에서 사용하는 arguments, querySelectAll 엘리먼트 리스트
 
+진짜 배열이 아니기때문에 내부 프로토타입에 배열 내장함수가 없다.
+
+배열로 바꿔준 후 사용한다.
+
+```
+Array.from(arguments).map((arg) => ...)
+```
+
+### 불변성 (immutable)
+
+원본배열의 불변성을 지키기 위해서는
+
+> 방법 1. 배열을 복사한다.
+
+```
+function copyArray(originArray) {
+  const newArray = [ ...originArray ];
+  return newArray;
+}
+```
+
+> 방법 2. 새로운 배열을 반환하는 메서드들을 활용한다.
+
+```
+filter(), map(), slice() 등 
+```
+
+push, unshift등의 함수는 원본 배열을 바꾼다.
