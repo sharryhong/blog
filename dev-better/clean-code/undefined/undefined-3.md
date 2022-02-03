@@ -87,3 +87,69 @@ filter(), map(), slice() 등
 ```
 
 push, unshift등의 함수는 원본 배열을 바꾼다.
+
+
+
+### for문 배열 고차함수로 리팩토링
+
+> 임시변수 사용코드
+
+```
+const price = [1000,2000,3000];
+
+function getWonPrice(priceList) {
+  let temp = [];
+  for (let i = 0; i < priceList.length; i++) {
+    temp.push(priceList[i] + '원');
+  }
+  return temp;
+}
+```
+
+> map 배열 고차함수를 이용해서 선언, 명시적으로 리팩토링
+
+```
+const price = [1000,2000,3000];
+
+function getWonPrice(priceList) {
+  return priceList.map((price) => price + '원');
+}
+```
+
+
+
+### 배열 메서드 체이닝 활용하기
+
+> 체이닝 활용 전 코드
+
+```
+const price = [5000,2000,1000,3000,1500];
+
+const suffixWon = (price) => price + '원';
+const isOverOneThousand = (price) => price > 1000;
+const ascendingList = (a, b) => a - b;
+
+function getWonPrice(priceList) {
+  const isOverList = priceList.filter(isOverOneThousand);
+  const sortList = isOverList.sort(ascendingList);
+  
+  return isOverList.map(suffixWon)
+}
+```
+
+> 메서드 체이닝 활용 : 명시적, 앞으로 계속 코드가 추가되어도 명확하게 작성할 수 있다.
+
+```
+const price = [5000,2000,1000,3000,1500];
+
+const suffixWon = (price) => price + '원';
+const isOverOneThousand = (price) => price > 1000;
+const ascendingList = (a, b) => a - b;
+
+function getWonPrice(priceList) {
+  return priceList
+    .filter(isOverOneThousand)
+    .sort(ascendingList)
+    .map(suffixWon);
+}
+```
