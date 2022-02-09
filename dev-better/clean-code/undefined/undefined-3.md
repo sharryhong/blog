@@ -153,3 +153,20 @@ function getWonPrice(priceList) {
     .map(suffixWon);
 }
 ```
+
+### map vs forEach
+
+forEach는 매 요소마다 함수를 실행한다.
+
+map은 매 요소마다 함수를 실행하고 결과값을 저장해 새로운 배열을 반환한다.
+
+
+
+즉,
+
+반환값 없이 배열 요소를 순환하면서 함수 실행만 할 경우는 forEach 사용
+
+새로운 배열을 만들때는 map을 사용한다.&#x20;
+
+
+
