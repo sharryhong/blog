@@ -15,8 +15,6 @@ description: 2022-02
 
 페이지가 로드되면서 실행되는 작업들을 타임라인과 챠트 형태로 보여준다.
 
-오래 실행되고 있는 부분을 찾아 어느 함수 부분에서 문제가 있는지 찾아본다.
-
 참고 링크 : [https://developer.chrome.com/docs/devtools/evaluate-performance/](https://developer.chrome.com/docs/devtools/evaluate-performance/)
 
 
