@@ -39,3 +39,4 @@
     * [웹 성능 최적화의 주요 포인트](dev-better/undefined/undefined/undefined.md)
     * [분석 툴](dev-better/undefined/undefined/undefined-1.md)
     * [이미지 사이즈 최적화](dev-better/undefined/undefined/undefined-2.md)
+    * [bottleneck (병목) 코드 탐색](dev-better/undefined/undefined/bottleneck.md)

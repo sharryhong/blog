@@ -18,3 +18,7 @@ description: 2022-02
 * 결과에서 OPPORTUNITIES : 리소스 (로딩 성능 최적화) 관련 문제점과 해결 가이드 제시&#x20;
 * 결과에서 DIAGNOSTICS : 페이지 실행 관점 (렌더링 최적화) 관련 문제점과 해결 가이드 제시&#x20;
 
+참 링크 :&#x20;
+
+* [https://web.dev/first-contentful-paint/](https://web.dev/first-contentful-paint/)&#x20;
+* [https://web.dev/lighthouse-performance/](https://web.dev/lighthouse-performance/)&#x20;
