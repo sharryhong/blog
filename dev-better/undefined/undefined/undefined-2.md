@@ -2,7 +2,7 @@
 description: 2022-02
 ---
 
-# 이미지 사이즈 최적화
+# Image size optimization
 
 Lighthouse 결과 중 OPPORTUNITIES 에서&#x20;
 

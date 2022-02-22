@@ -2,7 +2,7 @@
 description: 2022-01
 ---
 
-# 클린코드 자바스크립트 강의
+# Clean Code JavaScript 강의
 
 출처 : 클린코드 자바스크립트 강의 [https://www.udemy.com/course/clean-code-js/](https://www.udemy.com/course/clean-code-js/) &#x20;
 

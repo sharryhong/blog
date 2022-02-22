@@ -2,7 +2,7 @@
 description: 2022-01
 ---
 
-# 변수 다루기
+# Variables. 변수 다루기
 
 ### var를 지양하자 &#x20;
 

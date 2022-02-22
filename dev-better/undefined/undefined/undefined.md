@@ -2,7 +2,7 @@
 description: 2022-02
 ---
 
-# 웹 성능 최적화의 주요 포인트
+# loading, rendering performance
 
 ### **웹 성능 최적화의 주요 포인트**
 

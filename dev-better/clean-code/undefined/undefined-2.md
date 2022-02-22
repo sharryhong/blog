@@ -2,7 +2,7 @@
 description: 2022-01
 ---
 
-# 분기 다루기
+# Conditional. 분기 다루기
 
 ### 값식문
 

@@ -2,7 +2,7 @@
 description: 2022-02
 ---
 
-# bottleneck (병목) 코드 탐색
+# bottleneck (병목) code 탐색
 
 느린 js 코드를 최적화 해보자.
 

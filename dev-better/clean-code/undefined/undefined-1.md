@@ -2,7 +2,7 @@
 description: 2022-01
 ---
 
-# 경계 다루기
+# Boundary. 경계 다루기
 
 ### min, max (최소값, 최대값)&#x20;
 
