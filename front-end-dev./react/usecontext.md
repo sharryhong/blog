@@ -4,7 +4,7 @@ description: '2022-02-22'
 
 # useContext 리렌더링 이슈
 
-이슈 : memo, useCallback 사용 후에도 리렌더링 되 이슈발생. 이유를 찾아보니 useContext 때문이었다.
+이슈 : memo, useCallback 사용 후에도 리렌더링 되는 이슈발생. 이유를 찾아보니 useContext 때문이었다.
 
 
 
