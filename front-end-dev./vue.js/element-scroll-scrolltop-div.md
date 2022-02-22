@@ -4,9 +4,9 @@ description: '2021-09-20'
 
 # element 내부 scroll 될 때, ScrollTop 값에 따라 div를 보이게, 안보이게 제어하기
 
-실제 코드에는  좀 더 조건이 있지만,  간단하게 정리해보았습니다. 
+실제 코드에는  좀 더 조건이 있지만,  간단하게 정리해보았습니다.&#x20;
 
-```text
+```
 <template>
 // 스크롤될 element
 <div ref="scrollEl"> 
@@ -18,7 +18,7 @@ description: '2021-09-20'
 </div>
 ```
 
-```text
+```
 <script>
 import _throttle from 'lodash/throttle';
 
@@ -47,6 +47,4 @@ export default{
       this.scrollElScrollTop = this.$refs.scrollEl.scrollTop;
     }, 100),
 ```
-
-
 

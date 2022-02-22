@@ -4,13 +4,13 @@ description: '2021-05-12'
 
 # styled-component theme.ts가 storybook엔 적용안되는 이슈
 
-### 해결방법  
+### 해결방법 &#x20;
 
-#### npm install : [https://www.npmjs.com/package/storybook-addon-styled-component-theme](https://www.npmjs.com/package/storybook-addon-styled-component-theme) 
+#### npm install : [https://www.npmjs.com/package/storybook-addon-styled-component-theme](https://www.npmjs.com/package/storybook-addon-styled-component-theme)&#x20;
 
 > .storybook/preview.js
 
-```text
+```
 import { addDecorator } from '@storybook/react';
 import { withThemesProvider } from 'storybook-addon-styled-component-theme';
 import { ThemeProvider } from 'styled-components';
@@ -32,7 +32,7 @@ export const parameters = {
 
 > .storybook/main.js
 
-```text
+```
 module.exports = {
   stories: ['../components/**/*.stories.mdx', '../components/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
@@ -42,6 +42,4 @@ module.exports = {
   ],
 };
 ```
-
-
 
