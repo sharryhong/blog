@@ -7,6 +7,7 @@
 * [React](front-end-dev./react/README.md)
   * [절대경로(absolute path) 설정, jsx파일로 이동 설정](front-end-dev./react/jsx.md)
   * [useContext rerender issue](front-end-dev./react/usecontext-rerender-issue.md)
+  * [Firebase v9 Auth with React](front-end-dev/react/firebase-v9-auth-with-react.md)
 * [Vue.js](front-end-dev./vue.js/README.md)
   * [Vue.js 개발자를 위한 VS Code](front-end-dev./vue.js/vue.js-vs-code.md)
   * [Vue3 Chrome Extension](front-end-dev./vue.js/vue3-chrome-extension.md)
