@@ -99,6 +99,7 @@ class AuthService {
   logout() {
     this.auth.signOut();
   }
+  // 나중에 session 관련 코드 분리하여 사용 
   onAuthStateChanged(onChangedUser) {
     this.auth.onAuthStateChanged((user) => {
       onChangedUser(user);
@@ -132,20 +133,23 @@ ReactDOM.render(
 );
 ```
 
-### login , logout 호출
+### login , logout 함수&#x20;
 
 > App.jsx
 
 ```
-const onLogin = (event) => {
-  authService.login(event.target.innerText);
-};
+function App({ authService }) {
+  const onLogin = (event) => {
+    authService.login(event.target.innerText);
+  };
 
-const onLogout = useCallback(() => {
-  authService.logout();
-  navigate("/");
-}, [authService]);
+  const onLogout = useCallback(() => {
+    authService.logout();
+    navigate("/");
+  }, [authService]);
 ```
+
+
 
 
 
