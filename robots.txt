@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sharryhong.gitbook.io/front-end/sitemap.xml
