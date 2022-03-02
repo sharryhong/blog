@@ -8,6 +8,8 @@ star.svg 를 사용하여 별점표시 컴포넌트를 만들어보았습니다.
 
 개발환경 : React, Typescript
 
+결과화면 :![](<../../.gitbook/assets/스크린샷 2022-03-02 오후 5.46.26.png>)
+
 
 
 > src/assets/star.svg // 별 하나&#x20;
