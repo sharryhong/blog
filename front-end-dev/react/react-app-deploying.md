@@ -20,9 +20,9 @@ description: 2022-04
 $ npm run build  
 ```
 
-최종 deplay 파일들이 build 폴더에 생성되었다.&#x20;
+최종 deploy 파일들이 build 폴더에 생성되었다.&#x20;
 
-빌드 할 때마다 덮어 씌우므로 수정하지 않도록한다.&#x20;
+빌드할 때마다 덮어 씌우므로 수정하지 않도록 한다.&#x20;
 
 
 
@@ -45,7 +45,7 @@ Firebase 콘솔로 이동하여 왼쪽 메뉴에서 'Hosting'을 선택 후 '시
 #### 1. Firebase CLI 설치&#x20;
 
 ```
-$ sudo npm install -g firebase-tools // mac 기준 
+$ sudo npm install -g firebase-tools 
 ```
 
 #### 2. 프로젝트 초기화&#x20;
@@ -69,7 +69,7 @@ firebase init
 * 모든 url을 index.html로 다시 작성할 것인가. Yes 선택.&#x20;
 * &#x20;url경로가 서버에서는 무시되고 항상 spa 코드를 반환하도록 한다.&#x20;
 
-#### ? Set up automatic builds and deploys with GitHub?&#x20;
+#### ? Set up automatic builds and deploys with GitHub? No
 
 * 자동 빌드, 배포가 필요한가&#x20;
 

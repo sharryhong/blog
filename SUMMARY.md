@@ -10,6 +10,7 @@
   * [Firebase v9 Auth with React](front-end-dev/react/firebase-v9-auth-with-react.md)
   * [Firebase v9 Realtime Database with React](front-end-dev/react/firebase-v9-realtime-database-with-react.md)
   * [React Star Rating (별점 표시)](front-end-dev/react/react-star-rating.md)
+  * [React App deploying (배포)](front-end-dev/react/react-app-deploying.md)
 * [Vue.js](front-end-dev./vue.js/README.md)
   * [Vue.js 개발자를 위한 VS Code](front-end-dev./vue.js/vue.js-vs-code.md)
   * [Vue3 Chrome Extension](front-end-dev./vue.js/vue3-chrome-extension.md)
@@ -27,7 +28,6 @@
 
 * [etc](setting/README.md)
   * [npm upgrade (mac)](setting/npm-upgrade-mac.md)
-  * [React App deploying (배포)](setting/react-app-deploying.md)
 
 ## DEV BETTER
 
