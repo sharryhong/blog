@@ -27,6 +27,7 @@
 
 * [etc](setting/README.md)
   * [npm upgrade (mac)](setting/npm-upgrade-mac.md)
+  * [React App deploying (배포)](setting/react-app-deploying.md)
 
 ## DEV BETTER
 
