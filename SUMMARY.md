@@ -12,6 +12,7 @@
   * [React Star Rating (별점 표시)](front-end-dev/react/react-star-rating.md)
   * [React App deploying (배포)](front-end-dev/react/react-app-deploying.md)
 * [Vue.js](front-end-dev./vue.js/README.md)
+  * [vue+TypeScript](front-end-dev/vue.js/vue+typescript.md)
   * [Vue.js 개발자를 위한 VS Code](front-end-dev./vue.js/vue.js-vs-code.md)
   * [Vue3 Chrome Extension](front-end-dev./vue.js/vue3-chrome-extension.md)
   * [input file 선택된 파일 명 reset하기](front-end-dev./vue.js/input-file-reset.md)
