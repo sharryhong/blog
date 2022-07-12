@@ -8,7 +8,9 @@ description: 2022-07-11 월
 
 * 참고 링크 : [https://vuejs.org/guide/essentials/component-basics.html#dynamic-components](https://vuejs.org/guide/essentials/component-basics.html#dynamic-components)&#x20;
 
-> Button.vue
+`<component>` 의 특별한 `is` __ 속성으로 _element_를 __ 동적으로 __ 정해줄 __ 수 __ 있습니다_._&#x20;
+
+> 사용 예: Button.vue
 
 ```
 <template>
