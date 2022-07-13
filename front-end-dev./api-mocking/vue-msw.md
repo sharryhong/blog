@@ -4,10 +4,18 @@ description: '2021-08-06'
 
 # Vue 에서 msw 적용하기
 
-참고자료 : [https://www.vuemastery.com/blog/mock-service-worker-api-mocking-for-vuejs-development-testing/](https://www.vuemastery.com/blog/mock-service-worker-api-mocking-for-vuejs-development-testing/)&#x20;
+### 이슈&#x20;
 
 이미 작업이 시작된 Vue 프로젝트. 백엔드 개발 일정이 미뤄지면서 msw를 적용하기로 하였습니다. \
 전에는 react에 초반 작업만 적용해보았는데 이번엔 vue! 크게 다르지 않게 사용이 가능하군요 :)
+
+#### 참고자료&#x20;
+
+[https://www.vuemastery.com/blog/mock-service-worker-api-mocking-for-vuejs-development-testing/](https://www.vuemastery.com/blog/mock-service-worker-api-mocking-for-vuejs-development-testing/)&#x20;
+
+
+
+### 추가 셋팅&#x20;
 
 위의 참고자료와 동일하게 구성하며&#x20;
 

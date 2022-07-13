@@ -4,11 +4,15 @@ description: '2022-07-05'
 
 # LoadingBar Component
 
-> 개발 중인 프로젝트에 테이블 형식의 UI가 많은데, API 호출 로딩 spinner는 어울리지 않아 bar 형태로 추가하기로 하였습니다.&#x20;
+### 이슈
+
+개발 중인 프로젝트에 테이블 형식의 UI가 많은데, API 호출 Loading spinner는 어울리지 않아 bar 형태로 추가하기로 하였습니다.&#x20;
 
 * 참고 디자인 : [https://vuetifyjs.com/en/components/data-tables/#loading](https://vuetifyjs.com/en/components/data-tables/#loading)&#x20;
 
+### LoadingBar Component
 
+* Reflow, Repainting이 발생하지 않도록 transform 속성을 이용하여 애니메이션을 처리하였습니다.
 
 > LoadingBar.vue
 

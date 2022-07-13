@@ -4,11 +4,17 @@ description: '2022-05-13'
 
 # composition-api 사용하여 menu 의 outside click 시 close
 
-> #### " dropdown 처럼 클릭시 열고 닫히는 컴포넌트의 바깥 부분을 클릭하면 닫히게 하는 기능. 여러 곳에 재사용이 가능하기 때문에 composition-api를 사용하여 React hooks처럼 만들어보았다. "
+### 이슈
+
+dropdown 처럼 클릭시 열고 닫히는 컴포넌트의 **바깥 부분을 클릭**하면 닫히게 하는 기능. \
+여러 곳에 재사용이 가능하기 때문에 composition-api를 사용하여 React hooks처럼 만들어보았습니다.
 
 
 
-> @/hooks/useClickOutside.ts
+### useClickOutside.ts&#x20;
+
+* Vue2를 사용중이기 때문에 @vue/composition-api 를 설치 후 사용한다.&#x20;
+* Vue3를 사용한다면 \`_import_ { ref, onBeforeUnmount, onMounted } _from_ "vue";\` 로 수정하면 된다.&#x20;
 
 ```
 import { ref, onBeforeUnmount, onMounted } from "@vue/composition-api";
@@ -39,12 +45,7 @@ export const useClickOutside = (el: string) => {
 
 ```
 
-* Vue2를 사용중이기 때문에 @vue/composition-api 를 설치 후 사용한다.&#x20;
-* Vue3를 사용한다면 \`_import_ { ref, onBeforeUnmount, onMounted } _from_ "vue";\` 로 수정하면 된다.&#x20;
-
-
-
-> 사용하는 곳
+> 사용 예&#x20;
 
 ```
 <script lang="ts">
@@ -59,6 +60,7 @@ export default Vue.extend({
   watch: {
     isClickOutside() {
       if (this.isClickOutside) {
+        // 바깥 부분 클릭시 처리할 코드 
         this.isShow = false;
       }
     },

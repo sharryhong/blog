@@ -4,6 +4,8 @@ description: '2021-05-13'
 
 # storybook에서 alias path 안되는 이슈
 
+### 이슈&#x20;
+
 상대경로 대신 @/\* 로 사용하기 위해 tsconfig.json 파일에 아래와 같이 셋팅을 하고 작업중입니다.&#x20;
 
 ```

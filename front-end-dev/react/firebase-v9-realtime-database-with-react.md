@@ -8,12 +8,12 @@ description: '2022-02-24'
 
 ## 파이어베이스 버전9. Realtime Database setup
 
-관련  링크  &#x20;
+#### 관련자료   &#x20;
 
 * [https://firebase.google.com/docs/database/web/start](https://firebase.google.com/docs/database/web/start)&#x20;
 * [https://firebase.google.com/docs/database/web/read-and-write](https://firebase.google.com/docs/database/web/read-and-write)&#x20;
 
-firebase docs 코드&#x20;
+### firebase docs 코드&#x20;
 
 > Write data
 
