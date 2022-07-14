@@ -12,6 +12,7 @@
   * [React Star Rating (별점 표시)](front-end-dev/react/react-star-rating.md)
   * [React App deploying (배포)](front-end-dev/react/react-app-deploying.md)
 * [Vue.js](front-end-dev./vue.js/README.md)
+  * [Sort an Array of Objects by Boolean property](front-end-dev/vue.js/sort-an-array-of-objects-by-boolean-property.md)
   * [Dynamic Components](front-end-dev/vue.js/dynamic-components.md)
   * [LoadingBar Component](front-end-dev/vue.js/loadingbar-component.md)
   * [composition-api 사용하여 menu 의 outside click 시 close](front-end-dev/vue.js/composition-api-menu-outside-click-close.md)
