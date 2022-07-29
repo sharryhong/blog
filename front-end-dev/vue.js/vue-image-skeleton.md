@@ -24,15 +24,25 @@ Img 컴포넌트를 개발하면서 스켈레톤에 대해 좀 더 자세히 알
 
 \=> 현재 개발중인 프로젝트는 Vue2로 되어있고, 복잡하지 않은 UI라 최대한 간단하게 Img 컴포넌트를 만들어서 적용하기로 하였습니다.&#x20;
 
+#### 참고 자료&#x20;
 
+[https://renatello.com/vue-js-image-loaded/](https://renatello.com/vue-js-image-loaded/)&#x20;
 
 ### 해결 코드&#x20;
 
 > Img.vue&#x20;
 
+* Vue img @load 이벤트로 이미지가 완전히 로드된 시점 후에 src 경로를, 그 전엔 default image를 적용시킵니다.
+
 ```
 <template>
-  <img :src="src || `${require('@/assets/images/' + lazySrc)}`" :alt="alt" />
+  <img
+    :src="
+      isLoaded && src ? src : `${require('@/assets/images/' + defaultImage)}`
+    "
+    :alt="alt"
+    @load="onLoadImage"
+  />
 </template>
 
 <script lang="ts">
@@ -43,13 +53,23 @@ export default Vue.extend({
     src: {
       type: String,
     },
-    lazySrc: {
+    defaultImage: {
       type: String,
-      default: "img48.png",
+      default: "ico_default.png",
     },
     alt: {
       type: String,
       default: "",
+    },
+  },
+  data() {
+    return {
+      isLoaded: false,
+    };
+  },
+  methods: {
+    onLoadImage() {
+      this.isLoaded = true;
     },
   },
 });
@@ -60,7 +80,6 @@ img {
   width: inherit;
   height: inherit;
   object-fit: cover;
-  background-color: #eee;
 }
 </style>
 ```
@@ -68,6 +87,6 @@ img {
 > 사용 예&#x20;
 
 ```
-<Img :src="srcUrl" lazySrc="ico_lazy.png" />
+<Img :src="srcUrl" defaultImage="ico_profile.png" />
 ```
 
