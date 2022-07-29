@@ -5,6 +5,7 @@
 ## Front-End Dev
 
 * [Vue.js](front-end-dev./vue.js/README.md)
+  * [Vue Image Skeleton](front-end-dev/vue.js/vue-image-skeleton.md)
   * [Sort an Array of Objects by Boolean property](front-end-dev/vue.js/sort-an-array-of-objects-by-boolean-property.md)
   * [Dynamic Components](front-end-dev/vue.js/dynamic-components.md)
   * [LoadingBar Component](front-end-dev/vue.js/loadingbar-component.md)
