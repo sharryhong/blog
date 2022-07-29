@@ -8,7 +8,7 @@ description: 2022-07-29 금
 
 기존 코드에 `<img lazy-src=”ico_lazy.png”` 와 같은 코드가 있었는데 html img 태그의 기본 속성엔 lazy-src가 없습니다.&#x20;
 
-개발자의 의도는 이미지가 로드 되기 전에 보여질 이미지를 지정하고 싶었던 것 검색해보니 vuetify v-img 컴포넌트에 있는걸 그대로 넣은 것 같았습니다. [https://vuetifyjs.com/en/components/images/](https://vuetifyjs.com/en/components/images/)&#x20;
+개발자의 의도는 이미지가 로드 되기 전에 보여질 이미지를 지정하고 싶었던 것 같아서 검색해보니 vuetify v-img 컴포넌트에 있는걸 그대로 넣은 것 같았습니다. [https://vuetifyjs.com/en/components/images/](https://vuetifyjs.com/en/components/images/)&#x20;
 
 
 
