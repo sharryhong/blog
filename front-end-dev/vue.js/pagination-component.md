@@ -99,7 +99,7 @@ export default Vue.extend({
     },
     // 화면에 표시할 페이지 리스트 
     pagingList() {
-      return this.range(this.startPage, this.endPage);
+      return this.rangeNumberToArray(this.startPage, this.endPage);
     },
   },
   methods: {
@@ -107,7 +107,7 @@ export default Vue.extend({
       this.$emit("click", page);
     },
     // start, end 숫자로 배열 만드는 기능 
-    range(start: number, end: number) {
+    rangeNumberToArray(start: number, end: number) {
       return Array.from({ length: end - start + 1 }, (_, i) => start + i);
     },
   },
