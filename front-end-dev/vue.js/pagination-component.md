@@ -140,5 +140,11 @@ export default Vue.extend({
       last: false,
     },
     ...
-      
+
+    methods: {
+      onClickPage(page: number) {
+        this.pageOptions.page = page;
+        this.fetchNotice();
+      },
+            
 ```
