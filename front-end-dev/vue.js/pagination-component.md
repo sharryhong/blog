@@ -16,6 +16,8 @@ description: '2022-08-04'
 
 ### 해결 코드&#x20;
 
+> Pagination.vue&#x20;
+
 ```
 <template>
   <div>
@@ -73,7 +75,7 @@ export default Vue.extend({
     pageOptions: {
       type: Object,
     },
-    // 화면에 출력할 페이 갯수
+    // 화면에 출력할 페이지 갯수
     totalVisible: {
       type: Number,
       default: 10,
@@ -116,4 +118,27 @@ export default Vue.extend({
 ...
 </style>
 
+```
+
+> 사용 예&#x20;
+
+```
+<template>
+  ...
+  <Pagination :pageOptions="pageOptions" @click="onClickPage" /> 
+</template>
+
+<script lang="ts">
+  export default Vue.extend({
+    data: () => ({
+      pageOptions: {
+      page: 1,
+      size: 10,
+      totalElements: 0,
+      totalPages: 0,
+      first: false,
+      last: false,
+    },
+    ...
+      
 ```
