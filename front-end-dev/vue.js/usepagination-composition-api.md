@@ -4,7 +4,7 @@ description: '2022-08-19'
 
 # usePagination - composition api
 
-### 이슈&#x20;
+### 이슈 1. 반복 코드 리팩토링&#x20;
 
 Pagination 컴포넌트를 사용하는 곳에서 공통으로 반복해서 사용하는 코드를 composition api 를 사용하여 개선해보았습니다.
 
@@ -42,7 +42,7 @@ export default Vue.extend({
 
 ### 개선 코드&#x20;
 
-> usePagination.ts
+> hooks/usePagination.ts
 
 공통으로 사용할 data와 function을 관리&#x20;
 
@@ -95,7 +95,7 @@ export const usePagination = (arg?: ArgType): ReturnType => {
 ```typescript
 import { usePagination } from "@/hooks/usePagination"; 
 
-export default Vue.extend({
+export default Vue.extend({ // 이슈 2. 에서 수정!
   setup() {
     const { pageOptions, setPageOptions } = usePagination();
     return { pageOptions, setPageOptions };
@@ -115,4 +115,36 @@ export default Vue.extend({
 
 ```typescript
 const { pageOptions, setPageOptions } = usePagination({size: 5});
+```
+
+###
+
+### 이슈 2. typescript: property does not exist on type 'object & record\<never, any>
+
+* setup() 에서 return한 데이터를 `<template>` 코드 내에서 사용시 기능은 모두 동작하였으나, 위와 같은 빨간줄 typescript 경고가 생겼습니다.
+* 테스트해보니 chrome vue extention 에서도 data로 잘 들어오고 있고, build 에러도 뜨지 않았지만, 찾아보니 아래와 같이 수정을 하면 typescript 경고가 발생하지 않았습니다.
+
+
+
+#### 참고 자료
+
+* Vue 3로 마이그레이션하기 위해 준비해야 할 것: [https://ui.toast.com/weekly-pick/ko\_20200804](https://ui.toast.com/weekly-pick/ko\_20200804)
+  * \[컴포넌트를 작성할 때 `@vue/composition-api`를 사용한다.]\([https://ui.toast.com/weekly-pick/ko\_20200804#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%A0-%EB%95%8C-vuecomposition-api%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C%EB%8B%A4](https://ui.toast.com/weekly-pick/ko\_20200804#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%A0-%EB%95%8C-vuecomposition-api%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%9C%EB%8B%A4))
+
+### 해결 코드&#x20;
+
+```typescript
+<template>
+  ... 
+  // 이제 빨간 경고 줄이 생기지 않습니다. 
+  <Pagination :pageOptions="pageOptions" @click="onClickPage" />
+</template>
+
+import { defineComponent } from "@vue/composition-api";
+
+export default defineComponent({
+  setup() {
+    const { pageOptions, setPageOptions } = usePagination();
+    return { pageOptions, setPageOptions };
+  },
 ```
