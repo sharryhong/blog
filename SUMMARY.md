@@ -5,6 +5,7 @@
 ## Front-End Dev
 
 * [Vue.js](front-end-dev./vue.js/README.md)
+  * [usePagination - composition api](front-end-dev/vue.js/usepagination-composition-api.md)
   * [Pagination Component](front-end-dev/vue.js/pagination-component.md)
   * [Vue Image Skeleton](front-end-dev/vue.js/vue-image-skeleton.md)
   * [Sort an Array of Objects by Boolean property](front-end-dev/vue.js/sort-an-array-of-objects-by-boolean-property.md)
