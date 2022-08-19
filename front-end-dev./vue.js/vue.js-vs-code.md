@@ -10,7 +10,7 @@ description: '2021-07-27'
 
 ### 필요 설치&#x20;
 
-* VS Code 최신으로 다운로드 : [https://code.visualstudio.com/](https://code.visualstudio.com)&#x20;
+* VS Code 최신으로 다운로드 : [https://code.visualstudio.com/](https://code.visualstudio.com/)&#x20;
 * Vetur, Vue VScode Snippet 플러그인 설치&#x20;
 
 
