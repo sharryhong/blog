@@ -6,7 +6,7 @@ description: '2022-08-19'
 
 ### 이슈&#x20;
 
-Pagination 컴포넌트를 사용하는 곳에서 공통으로 사용하는 코드를 composition api 를 사용하여 코드를 개선하고자 하였습니다.&#x20;
+Pagination 컴포넌트를 사용하는 곳에서 공통으로 반복해서 사용하는 코드를 composition api 를 사용하여 개선해보았습니다.
 
 #### 기존 공통 코드&#x20;
 
