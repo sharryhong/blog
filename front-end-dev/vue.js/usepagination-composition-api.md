@@ -138,6 +138,7 @@ const { pageOptions, setPageOptions } = usePagination({size: 5});
   <Pagination :pageOptions="pageOptions" @click="onClickPage" />
 </template>
 
+<script lang="ts">
 import { defineComponent } from "@vue/composition-api";
 
 export default defineComponent({
