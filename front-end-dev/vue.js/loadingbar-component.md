@@ -112,7 +112,7 @@ export default Vue.extend({
   }),
   mounted() {
     this.$nextTick(() => {
-      // parent component 의 cell갯수를 가져와서 calspan 값으로 할당합니다. 
+      // parent table cell갯수를 가져와서 calspan 값으로 할당합니다. 
       this.colspan = this.$el
         .closest("table")
         .querySelector("tr:first-child").cells.length;
