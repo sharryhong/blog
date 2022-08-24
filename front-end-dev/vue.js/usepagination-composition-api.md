@@ -147,3 +147,98 @@ export default defineComponent({
     return { pageOptions, setPageOptions };
   },
 ```
+
+****
+
+### **Pagination 2개 이상 사용시 코드 비교**&#x20;
+
+> **composition api 사용 전**&#x20;
+
+```typescript
+data: () => ({
+    pageOptionsHistory: {
+      page: 1,
+      size: 5,
+      totalElements: 0,
+      totalPages: 0,
+      first: false,
+      last: false,
+    },
+    pageOptionsGroup: {
+      page: 1,
+      size: 5,
+      totalElements: 0,
+      totalPages: 0,
+      first: false,
+      last: false,
+    },
+  }),
+...
+  methods: {
+    async getHistory() {
+      try {
+        const response = await notice_api.getHistory(config);
+        if (response.status === 200) {
+          const data = response.data.items;
+          this.pageOptionsHistory = {
+            page: this.pageOptionsHistory.page,
+            size: data.size,
+            totalElements: data.totalElements,
+            totalPages: data.totalPages,
+            first: data.first,
+            last: data.last,
+          };
+        ...
+    async getGroup() {
+      try {
+        const response = await notice_api.getGroup(config);
+        if (response.status === 200) {
+          const data = response.data.items;
+          this.pageOptionsGroup = {
+            page: this.pageOptionsGroup.page,
+            size: data.size,
+            totalElements: data.totalElements,
+            totalPages: data.totalPages,
+            first: data.first,
+            last: data.last,
+          };
+```
+
+> **composition api 사용 후**&#x20;
+
+```typescript
+setup() {
+    const {
+      pageOptions: pageOptionsHistory,
+      setPageOptions: setPageOptionsHistory,
+    } = usePagination({ size: 5 });
+
+    const {
+      pageOptions: pageOptionsGroup,
+      setPageOptions: setPageOptionsGroup,
+    } = usePagination({ size: 5 });
+    return {
+      pageOptionsHistory,
+      setPageOptionsHistory,
+      pageOptionsGroup,
+      setPageOptionsGroup,
+    };
+  },
+...
+  methods: {
+    async getHistory() {
+      try {
+        const response = await notice_api.getHistory(config);
+        if (response.status === 200) {
+          const data = response.data.items;
+          this.setPageOptionsHistory(this.pageOptionsHistory.page, data);
+        ...
+    async getGroup() {
+      try {
+        const response = await notice_api.getGroup(config);
+        if (response.status === 200) {
+          const data = response.data.items;
+          this.setPageOptionsGroup(this.pageOptionsGroup.page, data);
+```
+
+이렇게 코드의 재사용성을 높여 반복 코드를 줄일 수 있습니다.&#x20;
