@@ -5,7 +5,6 @@
 ## Front-End Dev
 
 * [Vue.js](front-end-dev./vue.js/README.md)
-  * [TypeScript errors/warnings in VSCode](front-end-dev/vue.js/typescript-errors-warnings-in-vscode.md)
   * [usePagination - composition api (vue2)](front-end-dev/vue.js/usepagination-composition-api.md)
   * [Pagination Component](front-end-dev/vue.js/pagination-component.md)
   * [Vue Image Skeleton](front-end-dev/vue.js/vue-image-skeleton.md)
