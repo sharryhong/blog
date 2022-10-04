@@ -34,8 +34,3 @@
 
 
 
-### Next.js 프로젝트를 세팅한 뒤 yarn start 스크립트를 실행했을 때 실행되는 코드
-
-* SSR방식으로 서버가 즉시 렌더링 가능한 HTML 파일을 만들어서 클라이언트에 넘긴다.&#x20;
-* 빌드시 생성된 .next 폴더 > server > pages > index.html&#x20;
-
