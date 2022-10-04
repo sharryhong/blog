@@ -18,6 +18,8 @@
   * [input file 선택된 파일 명 reset하기](front-end-dev./vue.js/input-file-reset.md)
   * [element 내부 scroll 될 때, ScrollTop 값에 따라 div를 보이게, 안보이게 제어하기](front-end-dev./vue.js/element-scroll-scrolltop-div.md)
   * [진입한 url path에 맞게 메서드 실행](front-end-dev./vue.js/url-path.md)
+* [Next.js](front-end-dev/next.js/README.md)
+  * [CSR(Client-side Rendering)이란? 장단점](front-end-dev/next.js/csr-client-side-rendering.md)
 * [React](front-end-dev./react/README.md)
   * [절대경로(absolute path) 설정, jsx파일로 이동 설정](front-end-dev./react/jsx.md)
   * [useContext rerender issue](front-end-dev./react/usecontext-rerender-issue.md)
