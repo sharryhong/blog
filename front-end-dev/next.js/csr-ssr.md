@@ -1,7 +1,3 @@
----
-description: 2022-09
----
-
 # CSR, SSR, Next.js
 
 ### CSR(Client-side Rendering)이란&#x20;
