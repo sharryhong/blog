@@ -56,32 +56,31 @@ class ApiService {
 
 위 4번에서 keys폴더 내에 생성된 worker.ts파일
 
-```typescript
-...
+<pre class="language-typescript"><code class="lang-typescript">...
 export default {
-async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-	const baseUrl = '서드파티 url';
-	const apiKey = 'apiKey';
+<strong>  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise&#x3C;Response> {
+</strong>    const baseUrl = '서드파티 url';
+    const apiKey = 'apiKey';
 
-	const { pathname, searchParams } = new URL(request.url);
+    const { pathname, searchParams } = new URL(request.url);
 
-	const relayUrl = `${baseUrl}${pathname}?key=${apiKey}&${searchParams.toString()}`;
-	const response = await fetch(relayUrl);
+    const relayUrl = `${baseUrl}${pathname}?key=${apiKey}&#x26;${searchParams.toString()}`;
+    const response = await fetch(relayUrl);
 
-	const json = await response.json();
-	const jsonString = JSON.stringify({ json });
+    const json = await response.json();
+    const jsonString = JSON.stringify({ json });
 
-	return new Response(jsonString, {
-		status: response.status, 
-		headers: {
-			'Content-Type': 'application/json; charset=utf-8',
-			'Access-Control-Allow-Origin': '*',
-			'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-		},
-	});
-},
+    return new Response(jsonString, {
+      status: response.status, 
+      headers: {
+        'Content-Type': 'application/json; charset=utf-8',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+      },
+    });
+  },
 };
-```
+</code></pre>
 
 * status: response.status // ApiService에서 response.statusCode 를 사용할 수 있습니다.&#x20;
 * charset=utf-8 // 한국어가 깨지지 않습니다.&#x20;
