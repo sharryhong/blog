@@ -49,22 +49,23 @@ class ApiService {
 
 ```
 
-* 기존 코드에서 수정한 부분은 baseUrl부분, 그리고 uri 부분에서 api key 부분을 삭제한 것 뿐입니다.&#x20;
+* 기존 코드에서 수정한 부분은 baseUrl부분, 그리고 Uri.parse에서 api key 부분을 삭제한 것 뿐입니다.&#x20;
 * 즉, 서드파티 api 로 직접 호출하지 않고  Cloudflare Workers 를 거쳐서 호출하게 됩니다.&#x20;
 
 
 
 위 4번에서 keys폴더 내에 생성된 worker.ts파일
 
-<pre class="language-typescript"><code class="lang-typescript">...
+```typescript
+...
 export default {
-<strong>  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise&#x3C;Response> {
-</strong>    const baseUrl = '서드파티 url';
+  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+    const baseUrl = '서드파티 url';
     const apiKey = 'apiKey';
 
     const { pathname, searchParams } = new URL(request.url);
 
-    const relayUrl = `${baseUrl}${pathname}?key=${apiKey}&#x26;${searchParams.toString()}`;
+    const relayUrl = `${baseUrl}${pathname}?key=${apiKey}&${searchParams.toString()}`;
     const response = await fetch(relayUrl);
 
     const json = await response.json();
@@ -80,7 +81,7 @@ export default {
     });
   },
 };
-</code></pre>
+```
 
 * status: response.status // ApiService에서 response.statusCode 를 사용할 수 있습니다.&#x20;
 * charset=utf-8 // 한국어가 깨지지 않습니다.&#x20;
