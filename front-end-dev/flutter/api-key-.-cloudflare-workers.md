@@ -69,7 +69,7 @@ export default {
     const response = await fetch(relayUrl);
 
     const json = await response.json();
-    const jsonString = JSON.stringify({ json });
+    const jsonString = JSON.stringify(json);
 
     return new Response(jsonString, {
       status: response.status, 
